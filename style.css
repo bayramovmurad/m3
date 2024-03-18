@@ -5,6 +5,11 @@
 
 }
 
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -52,7 +57,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     font-size: 15px;
     transition: .1s all;
     position: relative;
@@ -68,13 +73,13 @@ nav .info button:nth-child(3) {
 
 nav .info button {
     border: none;
-    color: black;
+    color: var(--black);
     background: none;
     font-size: 20px;
 }
 
 ul li a:hover {
-    border-bottom: .7px solid black;
+    border-bottom: .7px solid var(--black);
 }
 
 .text-content {
@@ -83,12 +88,12 @@ ul li a:hover {
 
 .text-content h3 {
     font-size: 30px;
-    color: black;
+    color: var(--black);
 }
 
 .text-content h2 {
     font-size: 60px;
-    color: black;
+    color: var(--black);
 }
 
 .text-content button {
@@ -97,9 +102,9 @@ ul li a:hover {
     align-items: center;
     gap: 4px;
     border-radius: 2px;
-    border: 1px solid black;
-    background: white;
-    color: black;
+    border: 1px solid var(--black);
+    background: var(--white);
+    color: var(--black);
     width: 150px;
     height: 40px;
     margin-top: 10px;
@@ -107,9 +112,9 @@ ul li a:hover {
 }
 
 .text-content button:hover {
-    border: 1px solid white;
-    background: black;
-    color: white;
+    border: 1px solid var(--white);
+    background: var(--black);
+    color: var(--white);
 }
 
 /* ! SECTION 1 */
@@ -141,9 +146,9 @@ ul li a:hover {
 }
 
 .coffe_table_card .info button {
-    border: 1px solid black;
-    background: white;
-    color: black;
+    border: 1px solid var(--black);
+    background: var(--white);
+    color: var(--black);
     width: 25px;
     height: 25px;
     transition: .4s all;
@@ -151,9 +156,9 @@ ul li a:hover {
 }
 
 .coffe_table_card .info button:hover {
-    border: 1px solid white;
-    background: black;
-    color: white;
+    border: 1px solid var(--white);
+    background: var(--black);
+    color: var(--white);
 }
 
 .coffe_table_card img {
@@ -204,4 +209,64 @@ ul li a:hover {
     max-width: 1300px;
     margin: auto;
     padding: 70px 0px;
+}
+
+/* !FORM */
+.section4 {
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    max-width: 880px;
+    margin: auto;
+    gap: 20px;
+}
+
+form input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+
+form .submit {
+    width: 100px;
+    height: 40px;
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    transition: .4s;
+}
+
+form .submit .paper {
+    display: none;
+    font-size: 15px;
+}
+
+form .submit:hover {
+    width: 100px;
+    height: 40px;
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+form .submit:hover .paper {
+    display: block;
+}
+
+form .submit:hover .send {
+    display: none;
+}
+
+/* !FOOTER */
+
+footer {
+    padding: 50px 0px;
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
 }
